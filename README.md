@@ -1,4 +1,21 @@
+We develop smart contracts on polygon that are found on the source/smartcontract
+
+We used an API service on the laravel controls that you can find on this route; https://api-eu1.tatum.io/v3/ipfs to be able to upoad and scan the data on IPFS
+
+
+
+
+
+
+
+
+
+
 # Creación del contenedor
+
+
+
+
 
 IMPORTANTE: Antes de seguir deberemos tener instalado:
 - docker: https://docs.docker.com/install/

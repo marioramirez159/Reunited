@@ -16,42 +16,41 @@ We used an API service on the laravel controls that you can find on this route; 
 
 
 
-
-IMPORTANTE: Antes de seguir deberemos tener instalado:
+IMPORTANT: YOU NEED TO HAVE THE FOLLOWING INSTALELED:
 - docker: https://docs.docker.com/install/
 - docker-compose: https://docs.docker.com/compose/install/
 
-## Pasos a Seguir
+## STEPS TO FOLLOW
 
-1. Luego de Clonar del repositorio de la ruta: "https://gitlab.com/adga137/mirai.git" con el siguiente comando:
+1. Clone the repo on the next route: "https://gitlab.com/adga137/mirai.git" with this command:
 
 git clone https://gitlab.com/adga137/searchperson.git mirai
 
-2. Copiar de la carpeta nginx-mariadb todo su contenido
+2. Copy all content from the nginx-mariadb folder
 
 ```
 cd ~/searchperson/
 ```
 
-3. El siguiente paso es contruir el contenedor y ejemcutarlo para hacer este proceso se requieren permisos de administrador (root) en linux
+3. Build the container and execute. This requires an admon (root) permits on linux.
 
 ```
 docker-compose up --build
 ```
 
-4. Una vez en ejecución el proyecto abrir una instancia de la terminal o consola como (root) en linux para acceder al bash del contenedor
+4. When executed the project opens a terminal instance ir console as (root) in lunux to create the bash container.
 
 ```
 docker exec -it searchperson_php-fpm bash
 ```
 
-5. Una vez dentro de la bash del proyecto estaremos en la carpeta "~/src" si necesitamos composer podemos ejecutar:
+5. Once in the bash project, we will be using the "~/src" folder, if needed execute:
 
 ```
 composer install
 ```
 
-6. Luego instalar acacha adminlte laravel template con lo siguiente:
+6. Install acacha adminlte laravel template con lo siguiente:
 
 ```
 composer require "acacha/admin-lte-template-laravel"
